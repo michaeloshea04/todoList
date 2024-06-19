@@ -10,16 +10,22 @@
     <h1>To do App</h1>
 
     <form id="taskForm">
-        <label for="title">Title</label>
-        <input id="title" placeholder="enter title of task here"> <br>
-        <label for="description">Description</label>
-        <input id="description" placeholder="enter description of task here"> <br>
-        <label for="dueDate">Due date</label>
-        <input id="dueDate" placeholder="enter due date of task here"> <br>
-        <label for="priority">Priority</label>
-        <input id="priority" placeholder="enter priority of task here"> <br>
+        
+        <input type="text" id="title" placeholder="Title" required> <br>
+        
+        <input type="text" id="description" placeholder="Description" required> <br>
+        
+        <input type="date" id="dueDate" placeholder="Due date" required> <br>
+        
+        <select id="priority" required>
+            
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+        </select>
         <button type="submit">Add Task</button>
     </form>
+    <ul id="taskList"></ul>
     
 
     <script src="app.js"></script>
