@@ -20,8 +20,8 @@ function createProject(name){
             this.taskArray.push(task);
         },
         removeTask: function(index){
-            if (index > -1 && index < taskArray.length) {
-                taskArray.splice(index, 1);
+            if (index > -1 && index < this.taskArray.length) {
+                this.taskArray.splice(index, 1);
             }
         },
         printTask: function() {
