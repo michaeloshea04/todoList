@@ -9,16 +9,17 @@
 <body>
     <h1>To do App</h1>
 
+    <form id="project-form">
+        <input type="text" id="projectName" placeholder="Project Name" required>
+        <button type="submit">Add Project</button>
+    </form>
+    <select id="project-select"></select>
+
     <form id="taskForm">
-        
         <input type="text" id="title" placeholder="Title" required> <br>
-        
         <input type="text" id="description" placeholder="Description" required> <br>
-        
         <input type="date" id="dueDate" placeholder="Due date" required> <br>
-        
         <select id="priority" required>
-            
             <option value="High">High</option>
             <option value="Medium">Medium</option>
             <option value="Low">Low</option>
